@@ -26,9 +26,9 @@ export default function Page() {
     }
 
     // คำนวณ BMI
-    let weightValue = parseFloat(weight);
-    let heightValue = parseFloat(height) / 100; //แปลง cm. เป็น m.
-    let bmiValue = weightValue / (heightValue ** 2);
+    const weightValue = parseFloat(weight);
+    const heightValue = parseFloat(height) / 100; //แปลง cm. เป็น m.
+    const bmiValue = weightValue / (heightValue ** 2);
     setBmi(bmiValue.toFixed(2));
 
     //แปลผล BMI
