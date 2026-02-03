@@ -72,7 +72,7 @@ export default function Page() {
           <br />
           โปรแกรมคำนวณค่าดัชนีมวลกาย (BMI)
         </h1>
-
+        {/* ส่วนของ การป้อนค่า */}
         <div className="w-3/5 mt-5">
           <label htmlFor="weight">ป้อนน้ำหนัก (kg.)</label>
           <input
@@ -82,7 +82,7 @@ export default function Page() {
             placeholder="55.50"
             value={weight}
             onChange={(e) => setWeight(e.target.value)}
-            className="bg-white-50 p-2 w-full mt-2"
+            className="bg-white-50 p-2 w-full mt-2 rounded"
           />
 
           <label htmlFor="height">ป้อนส่วนสูง (cm.)</label>
@@ -93,7 +93,7 @@ export default function Page() {
             placeholder="170.00"
             value={height}
             onChange={(e) => setHeight(e.target.value)}
-            className="bg-white-50 p-2 w-full mt-2"
+            className="bg-white-50 p-2 w-full mt-2 rounded"
           />
 
           <button
